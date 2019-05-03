@@ -1,31 +1,80 @@
+/*https://codepen.io/lorayoconnell/pen/pyayOP*/
+
 body {
-	background-color: grey;
+	background-color: rgb(214, 220, 230);
 	font-family: Arial;
-	/*text-align: center;*/
+	margin: 0 auto;
+	width: 600px;
+	/*text-align: left;*/
 }
+
+div.me_wrapper {
+	text-align: center;
+	margin: 20px auto;
+	padding: 0;
+	width: 400px;
+}
+
+div.me {
+	display: inline-block;
+}
+
+img {
+	border-radius: 50%;
+	border: 1px solid black;
+	padding: 5px;
+	float: left;
+}
+
 h1 {
-	color: White;
-	/*font-family: Arial;*/
+	float: left;
+	padding: 0 50px 0 20px;
 }
 
-h2 {
-	color: lightgreen;
-	/*font-family: Arial;*/
+nav {
+	margin: 0;
+	padding: 0;
 }
 
-h3 {
-	color: lightgreen;
-	/*font-family: Arial;*/
+ul.navigation {
+	text-align: center;
+	padding: 0;
+	margin: 0;
 }
 
-
-/*p {
-	color: darkred;
-	border: 1px solid pink;
-	padding: 30px;
-	margin: 50px;
+li.navigation {
+	display: inline;
+	margin: 0;
+	padding: 0 5px;
 }
 
-p.error {
+li.active {
+	display: inline;
+	margin: 0;
+	padding: 0 5px;
 	color: white;
-}*/
+	background-color: yellow;
+}
+
+li a:hover {
+  color: white;
+}
+
+p {
+	text-align: left;
+}
+
+/*https://codepen.io/rachelnabors/pen/bpAJH*/
+.tuna {
+  /* steps causes the animation to chunk into 12 equal pieces */
+  animation: walk-cycle 4s steps(12) infinite;
+  background: url(http://stash.rachelnabors.com/img/codepen/tuna_sprite.png) 0 0 no-repeat; 
+  height: 200px;
+  width: 400px;
+  margin: 100px auto 0;
+}
+
+@keyframes walk-cycle {  
+  0% {background-position: 0 0; } 
+  100% {background-position: 0 -2391px; } /* Must be full height of sprite or skipping will happen.*/
+}
